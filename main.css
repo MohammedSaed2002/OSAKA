@@ -14,3 +14,14 @@ body {
 .navbar .navbar-nav .nav-link.active,.navbar .navbar-nav .nav-link.show{
     color: var(--primaryColor);
 }
+
+.hero{
+    height: calc(100vh - 56px);
+    background-image: url(./img/bg.jpg);
+    background-size:cover ;
+    background-position: -100px;
+}
+
+.hero a{
+    color: var(--primaryColor);
+}
