@@ -3,6 +3,9 @@
         --mainFont:"Open Sans", sans-serif;
 }
 
+.text_primary{
+    color:var(--primaryColor);
+}
 body {
     font-family:var(--mainFont) ;
 }
@@ -24,4 +27,8 @@ body {
 
 .hero a{
     color: var(--primaryColor);
+}
+
+.about{
+    background-image: url(./img/light_dot.jpg);
 }
