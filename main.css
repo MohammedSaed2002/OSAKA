@@ -29,6 +29,23 @@ body {
     color: var(--primaryColor);
 }
 
-.about{
+.about,
+.portfolio{
     background-image: url(./img/light_dot.jpg);
+}
+
+.portfolio .nav-tabs .nav-link.active{
+    color: var(--primaryColor);
+}
+
+.portfolio .nav-link{
+    color: #000;
+}
+
+.portfolio .nav-tabs .nav-link{
+    border: none;
+}
+
+.portfolio .nav-tabs{
+    border-bottom: none;
 }
