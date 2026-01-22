@@ -49,3 +49,74 @@ body {
 .portfolio .nav-tabs{
     border-bottom: none;
 }
+
+input[name="slider"] {
+  display: none;
+}
+
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-box {
+  max-width: 850px;
+  width: 100%;
+  margin: 70px auto 30px;
+  padding: 70px 50px 50px;
+  border: 1px solid #eee;
+  background: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: .4s;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#t1:checked ~ .testimonial-slider .t1,
+#t2:checked ~ .testimonial-slider .t2,
+#t3:checked ~ .testimonial-slider .t3,
+#t4:checked ~ .testimonial-slider .t4,
+#t5:checked ~ .testimonial-slider .t5 {
+  opacity: 1;
+  position: relative;
+}
+
+
+.testimonial-img {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial-img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+.testimonial-dots {
+  text-align: center;
+}
+
+.testimonial-dots label {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+#t1:checked ~ .testimonial-dots label:nth-child(1),
+#t2:checked ~ .testimonial-dots label:nth-child(2),
+#t3:checked ~ .testimonial-dots label:nth-child(3),
+#t4:checked ~ .testimonial-dots label:nth-child(4),
+#t5:checked ~ .testimonial-dots label:nth-child(5) {
+  background: #000;
+}
